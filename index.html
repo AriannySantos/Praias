@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Praias do Brasil 🏝</title>
+        <!--Link para conexão do arquivo externo do css-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--Criando uma lista para o menu-->
+        <ul id="barraNavegacao">
+            <li class="menu"><a href="#copacabana">Copacabana</a></li>
+            <li class="menu"><a href="#santos">Santos</a></li>
+            <li class="menu"><a href="#jeri">Jericoacoara</a></li>
+            <li class="menu"><a href="#parnaiba">Parnaíba</a></li>
+            <li class="menu"><a href="#cabo_frio">Cabo Frio</a></li>
+            <li class="menu"><a href="#cuidados">Cuidados no Verão</a></li>
+            <li class="menu"><a href="#dicas">Dicas</a></li>
+            <li class="menu"><a href="#visite">Visite também</a></li>
+        </ul>
+
+        <!--Criando a estrutura do menu check - menu que aparecerá quando a tela estiver pequena-->
+        <!--Cria um checkbox que ficará invisível e servirá de gatilho para abrir/fechar o menu-->
+        <input type="checkbox" id="menucheck">
+        <label for="menucheck" class="meuicone">&#9776;Menu </label> <!-- código &#9776 é utilizado para criar um rótulo clicável (um caixinha de texto) para cionar o box acima. Ele sabe que precisa acionar o box acima devido ao parâmetro menu-check passado no atributo "for", que corresponde ao mesmo id do inpur type checkbox.-->
+        <nav class="mobile-menu">
+            <a href="#copacabana">Copacabana</a></li>
+            <a href="#santos">Santos</a></li>
+            <a href="#jeri">Jericoacoara</a></li>
+            <a href="#parnaiba">Parnaíba</a></li>
+            <a href="#cabo_frio">Cabo Frio</a></li>
+            <a href="#cuidados">Cuidados no Verão</a></li>
+            <a href="#dicas">Dicas</a></li>
+            <a href="#visite">Visite também</a></li>
+        </nav>
+
+        <h1>Praias do Brasil</h1>
+        <!--Estrutura de organização das informações dentro de uma página-->
+        <section id="copacabana">
+            <h3>Copacabana - RJ</h3>
+            <!--src: refrencia a imagem (onde está). alt: descrição da imagem. Serve tanto para se der algum erro, ter a descrição da imagem, quanto para acessibilidade.-->
+            <div class="imgpraias">
+                <div>
+                    <img src="img/Copacabana.webp" alt="Imagem da praia de Copacabana, a partir de um dos prédios da avenida Atlântica, em um dia de sol, mostrando toda a extensão da praia até o final da avenida.">
+                </div>
+                <div>
+                    <img src="img/Copacabana2.jpg" alt="Imagem do calçadão da praia de Copacabana, com as pedras portuguesas formando as famosas ondas no calcação, bem ao centro, alguns coqueiros à esquerda e alguns prédios da orla à direita.">
+                </div>
+                <div>
+                    <img src="img/Copacabana3.jpg" alt="Vista aérea da praia de Copacabana, com o mar tomando o lado esquerdo e o centro da imagem, a orla da praia, os prédios e alguns morros do lado direito.">
+                </div>
+            </div>
+            <h2>Restaurantes recomendados</h2>
+            <!--Criando uma lista ordenada-->
+            <ul><!--Estrutura de lista não-ordenada-->
+                <!--1º item da lista-->
+                <li>Nossa primeira recomendação é o restaurante <a href="https://marius.com.br/">Marius</a>, conhecido por sua cozinha brasileira e mediterrânea.</li>
+                <li>A segunda recomendação é para quem gosta de uma boa comida italiana. O <a href="http://latrattoriario.com.br/">La Trattoria</a> possui excelentes opções no menu e um ambiente super agradável.</li>
+                <li>Por último, indicamos o <a href="https://joaquinabar.com.br/">Joaquina Bar</a>, localizado em plena Avenida Atlântica, com muitas opções de petiscos e um chopp bem gelado.</li>
+            </ul><!--Fim da lista não-ordenada-->
+            <h2>O que fazer em Copacabana?</h2>
+            <ol><!--Início da lista ordenada-->
+                <li>O clássio: curtir a praia e seu famoso calçadão. É possível praticar alguma atividade física e, na sequência, dar um mergulho no mar para refrescar, pegar um bronze, e apreciar as belezas naturais do Rio.</li>
+                <li>Forte de Copacabana: por apenas R$ 10,00 é possível conhecer um pouco mais da história do Rio de Janeiro (e também do Brasil) no charmoso Museu de Copacabana. Além disso, pode-se tomar um delicioso café na famosa Confeitaria Colombo e aprecisar um pouco da arquitetura brasileira imperial.</li>
+                <li>Feira noturna: após um curtir a praia durante o dia, o calçadão abre espaço para uma feira com diversas barracas e que funciona todos os dias, das 18h até meia noite. Lá você irá encontrar muitas opções de souveniers para levar para casa, além de diversas opções de comidas.</li>
+            </ol>
+        </section>
+        <section id="santos">
+            <h3>Santos - SP</h3>
+            <div>
+            <img src="img/Santos.jpg" alt="Praia de Santos num dia de sol, mostrando a orla da praia, além do calçadão, que é composto por um extenso jardim.">
+            <img src="img/Santos.jpg" alt="Praia de Santos num dia de sol, mostrando a orla da praia, além do calçadão, que é composto por um extenso jardim.">
+            </div>
+            <h2>Restaurantes recomendados</h2>
+            <ul><!--Lista não-ordenada-->
+                <li>Aproveitando o que uma cidade litorânea tem de melhor a oferecer, em termos de comida, o <a href="http://www.nausrestaurantebar.com.br/">Naus Restaurante Bar</a> é especializado em frutos do mar, além de ter comida italiana e hamburgueres. O restaurante ainda conta com a presença ilustre do Wilson, a famosa bola que fez companhia ao Tom Hanks, no filme O Naúfrago.</li>
+                <li>Outra ótima opção é o <a href="https://www.costazulseafood.com.br/">Costazul Seafood</a>, um restaurante peruano que há mais de 30 anos encanta os clientes com seus excelentes pratos.</li>
+                <li>Para quem busca algo mais tradicional, porém sofisticado, uma boa escolha é <a href="https://www.marriott.com/pt-br/hotels/saoss-sheraton-santos-hotel/dining/">O Lagar Restaurante</a>, um restaurante português que fica dentro do Sheraton Hotel.</li>
+            </ul>
+            <h2>O que fazer em Santos?</h2>
+            <ol><!--Lista ordenada-->
+                <li>Aquário de Santos: visitar o aquário é uma ótima opção para quem tem crianças, mas também pode ser bem aproveitado por adultos.</li>
+                <li>Calçadão com jardim: a cidade de Santos possui o maior jardim frontal à orla do mundo, com mais de 5000 km de extensão. Além da possibilidade de praticar várias atividades físicas, o calçadão ainda fornece uma bela vista para todos que transitam pela cidade.</li>
+                <li>Feiras livres: existem diversas feiras livres que acontecem em dias e lugares distintos pela cidade, mas com mais frequência aos domingos. Visitar uma dessas feiras para comer um pastel com caldo de cana e comprar o peixe do almoço é uma experiência imperdível para quem visita a cidade.</li>
+            </ol>
+        </section>
+        <section id="jeri">
+            <h3>Jericoacoara - CE</h3>
+            <img src="img/jericoacoara-ou-jeri.jpg" alt="Praia de Jericoacoara num dia de sol, mostrando várias redes montadas na água, com pessoas deitadas nelas.">
+            <h2>Restaurantes recomendados</h2>
+            <ul><!--Lista não-ordenada-->
+                <li>Um dos mais tradicionais restaurantes de Jericoacoara (para os íntimos, apenas Jeri), o <a href="https://www.facebook.com/people/Bistr%C3%B4-Cai%C3%A7ara/100063701883876/">Bistrô Caiçara</a> oferece um cardápio incrível de pratos tradicionais da culinária brasileira e você ainda pode fazer sua refeição com uma bela vista do mar.</li>
+                <li>Quem ama hamburguer, vai adorar o <a href="https://www.facebook.com/567burger/">567 Burguer</a>, uma hamburgueria com várias opções de lanches, todos feitos com carnes defumadas, molhos caseiros e pães especiais.</li>
+                <li>Se você procura uma boa pizza e comida italiana, além de uma ambiente singular e aconchegante, o <a href="https://www.facebook.com/romajericoacoara">Romã Restaurante e Pizzaria</a> pode te oferecer isso e muito mais.</li>
+            </ul>
+            <h2>O que fazer em Jericoacoara?</h2>
+            <ol><!--Lista ordenada-->
+                <li>Lagoa do Paraíso: no município de Jijoca de Jericoacoara, a Lagoa do Paraíso é considerada uma das melhores praias do Brasil. É uma lagoa de águas cristalinas, com tons de azul e verde. Ao longo de sua extensão existem redes nas águas para os visitantes descansarem.</li>
+                <li>Pedra Furada: cartão postal de Jericoacoara, a Pedra Furada é uma atração muito bonita e que rende belas fotos. A pedra tem uma fenda no meio e fica na beira do mar. Em um determinado período do ano, o pôr do sol ocorre “dentro” da pedra.</li>
+                <li>Passeios de buggy: esse é um passeio bem popular e que leva às principais atrações da região, passando pela Árvore da Preguiça – uma árvore com galhos “deitados” devido aos ventos fortes de Jericoacoara -, pelas Lagoas do Amâncio, que ficam cheias em época de chuva, pelo Lagun, pelo Buraco Azul, pela Lagoa Azul e pela Lagoa do Paraíso.</li>
+            </ol>
+        </section>
+        <section id="parnaiba">
+            <h3>Parnaíba - PI</h3>
+            <img src="img/Figura-3-Praia-de-Pedra-do-Sal-municipio-de-Parnaiba-Piaui-Fonte.png" alt="Vista aérea da Praia do Sal, no município de Parnaíba, mostrando além da faixa de areia, as turbinas eólicas da Usina Eólica Pedra do Sal ao fundo.">
+            <h2>Restaurantes recomendados</h2>
+            <ul><!--Lista não-ordenada-->
+                <li>Com um espaço refinado e contemporâneo, o <a href="https://restaurantemangata.com.br/">Restaurante Mangata</a> oferece culinária de carnes e frutos do mar com pratos à francesa.</li>
+                <li>Mesmo no nordeste, é sempre bom ter uma boa opção de comida japonesa como o <a href="https://www.facebook.com/foodparkbeirario/">Food Park Beira Rio</a>. O cardápio oferece opções de carnes, massas, culinária japonesa e chinesa, lanches, cafés, sobremesas e drinks.</li>
+                <li>Saindo do tradicional, o <a href="https://www.instagram.com/accounts/login/?next=%2Fzayngastrobar%2F&source=omni_redirect">Zayn Gastro Bar</a> é um restaurante árabe (com uma pitadinha de Brasil no cardápio) que oferece diversas opções, atendendo também aos vegetarianos e veganos.</li>
+            </ul>
+            <h2>O que fazer em Parnaíba?</h2>
+            <ol><!--Lista ordenada-->
+                <li>Delta do Parnaíba: a cidade é banhada pelo Rio Parnaíba, com quem divide o nome, e faz divisa com o Estado do Maranhão. O Delta do Rio Parnaíba, ou Delta das Américas, corresponde à foz do Rio Parnaíba e está situado entre os estados brasileiros do Maranhão e Piauí. A foz abre-se em cinco braços, envolvendo 73 ilhas fluviais. Sua paisagem exuberante, repleta de dunas, mangues e ilhotas, com fauna e flora peculiares, garantem um cenário paradisíaco para os turistas.</li>
+                <li>Praia da Pedra do Sal: é a única praia do município de Parnaíba, fazendo parte do Delta do Parnaíba. É conhecida por sua beleza rústica, areia clara e mar de águas claras. Oferece um ambiente tranquilo e é considerada um destino mágico dentro do Delta do Parnaíba, contando com quiosques, restaurantes e estacionamento, além de um parque para crianças.</li>
+                <li>Porto das Barcas: originalmente construído para facilitar o escoamento da produção de charque, cera de carnaúba e outros produtos locais, o porto hoje abriga um museu que conta a história da região, além de oferecer restaurantes e ter várias lojinhas de artesanato, onde é possível adquirir desde rendas até esculturas de madeira.</li>
+            </ol>
+        </section>
+        <section id="cabo_frio">
+            <h3>Cabo Frio - RJ</h3>
+            <img src="img/Cabo frio.webp" alt="Vista aérea da praia, com as extremidades de terra formando uma espécie de lagoa em formato de meia lua, além de mostrar o mar e outras ilhas ao fundo no oceano.">
+            <h2>Restaurantes recomendados</h2>
+            <ul><!--Lista não-ordenada-->
+                <li>O <a href="https://www.solnacozinha.com.br/">Sol na Cozinha</a> oferece um cardápio flutuante e inovador, associado com o que Arraial do Cabo tem de melhor para oferecer: o frescor e a qualidade de seus frutos do mar.</li>
+                <li>Se você quiser um restaurante intimista e contemporâneo, a dica é o <a href="https://www.facebook.com/ritadecassiagastronomia/">Rita De Cássia Gastronomia</a>. Localizado no charmoso Largo de São Benedito, possui um cardápio sazonal com pratos mediterrâneos e brasileiros.</li>
+                <li>No coração de Cabo Frio, com uma vista encantadora para o canal, o <a href="https://www.facebook.com/restaurantemarseafood/">Restaurante Mar</a> é o destino ideal para quem busca uma experiência gastronômica autêntica, sofisticada e cheia de sabor. Especializado em frutos do mar frescos, o restaurante oferece um cardápio autoral com pratos que celebram a culinária litorânea com toques criativos e ingredientes selecionados.</li>
+            </ul>
+            <h2>O que fazer em Cabo Frio?</h2>
+            <ol><!--Lista ordenada-->
+                <li>Praias: As praias que deram a fama de paraíso a Arraial do Cabo são a Praia do Forno, as Prainhas do Pontal do Atalaia e a praia da Ilha do Farol, mas existem diversas outras praias para visitar e que também valem muito a pena!</li>
+                <li>Trilhas: para quem gosta de praticar atividade física enquanto aprecia belas vistas, fazer trilha é uma ótima opção. Algumas dessas trilhas levam a mirantes com vistas panorâmicas da cidade e da região.</li>
+                <li>Esportes aquáticos: as praias possibilitam uma grande quantidade de opções de prática de esportes aquáticos como surf, windsurf, kitesurf, stand-up paddle e mergulho. Para quem gosta de atividades radicais, vai poder se divertir bastante.</li>
+            </ol>
+        </section>
+        <section id="cuidados"><!--Estrutura Site1-->
+            <h2 id="tituloMais">Cuidados no Verão</h2>
+            <img src="img/Calor2.avif" alt="Imagem de uma praia de água verde e cristalina, sendo possível ver alguns corais no fundo, com alguns coqueiros na orla e morros cobertos de vegetação ao fundo.">
+            <p>Para aproveitar o verão nas praias, é importante tomar alguns cuidados, como usar protetor solar e manter-se hidratado.</p>
+            <ul><!--Lista não-ordenada-->
+                <li>Fique longe do limão.</li>
+                <li>Abuse do protetor solar (e de roupas com fotoproteção).</li>
+                <li>Tenha cuidado com a alimentação.</li>
+                <li>Evite nadar logo após comer.</li>
+                <li>Não fique muito tempo com roupa de banho molhada.</li>
+                <li>Não esqueça de proteger os olhos.</li>
+                <li>Cuidado com a bebida alcóolica em excesso.</li>
+                <li>Não esqueça de beber água.</li>
+            </ul>
+        </section>
+        <section id="dicas"><!--Estrutura Site2-->
+            <h2 class="tituloOutros">Dicas para não perder crianças na praia</h2>
+            <p>Em praias movimentadas, é essencial ficar atento às crianças. Algumas dicas incluem estabelecer um ponto de encontro, identificar as crianças com pulseiras...</p>
+            <img src="img/crianças-na-praia-902x590.jpeg" alt="Cinco crianças vistas de costas, com roupas de banho e correndo em direção à água para entrar no mar.">
+            <h2>Outras dicas</h2>
+            <ol><!--Lista ordenada-->
+                <li>Mantenha um ponto de encontro definido.</li>
+                <li>Use pulseiras de identificação nas crianças.</li>
+                <li>Ensine às crianças seus nomes completos e números de telefone.</li>
+                <li>Esteja atento às localizações dos salva-vidas.</li>
+                <li>Evite praias muito movimentadas.</li>
+                <li>Incentive as crianças a não se afastarem muito.</li>
+                <li>Use uma barraca ou guarda-sol colorido como ponto de referência.</li>
+                <li>Esteja ciente dos arredores e identifique pontos de referência fixos.</li>
+            </ol>
+        </section>
+        <section id="visite">
+            <h2 class="tituloOutros">Visite também</h2>
+            <!--A div também é uma estrutura organizadora de elementos-->
+            <div class="menuVisite">
+                <!--Construindo cards-->
+                <!--Card n°1-->
+                <div class="card" style="width: 18rem;">
+                    <img src="img/Ilhabela.jpg" alt="Vista aérea de Ilhabela, mostrando a faixa de areia, os morros e vegetação ao fundo e vários barcos e lanchas no mar." style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Ilhabela</h5>
+                        <p class="card-text">Um dos únicos municípios-arquipélagos marinhos do Brasil, essa ilha possui praias paradisíacas.</p>
+                        <a href="https://www.ilhabela.com.br/" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+           
+                <!--Card n°2-->
+                <div class="card" style="width: 18rem;">
+                    <img src="img/GUIA-GUARUJA.jpg" alt="Vista aérea da orla das praias do Guarujá, mostrando a faixa de areia, os prédios da orla, o mar azul e algumas ilhas e morros ao fundo." style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Guarujá</h5>
+                        <p class="card-text">Conhecida como "Pérola do Atlântico", essa cidade encanta com suas 27 praias.</p>
+                        <a href="https://portalguaruja.tur.br/" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+            
+                <!--Card n°3-->
+                <div class="card" style="width: 18rem;">
+                    <img src="img/Maragogi" alt="Foto do mar de Maragogi, com águas azuis e cristalinas, onde é possível ver a barreira de corais, várias pessoas nadando entre eles e barcos ao fundo." style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Maragogi</h5>
+                        <p class="card-text">Situada bem no coração da Costa dos Corais, a maior barreira de corais do Brasil, fica o nosso "caribe brasileiro".</p>
+                        <a href="https://maragogionline.com.br/" class="btn">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

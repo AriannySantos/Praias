@@ -1,0 +1,174 @@
+body{
+    /*Definindo o tipo de fonte da página web*/
+    font-family: Arial, Helvetica, sans-serif;
+    /*Definindo a cor de fundo do site*/
+    background-color: #FAF0CC;
+    margin: 0%;
+}
+section{
+    background-color: #FAE89A;
+    margin: 20px; /*distância entre a borda da section para os outros conteúdos, seja a página ou outras sections*/
+    padding: 20px; /*distância entre a borda da section para o que está dentro dela*/
+    border-radius: 8px; /*para arredondar as bordas*/
+}
+h1{
+    padding-left: 20px;
+    color: rgb(65, 42, 165);
+}
+h2{
+    color: black;
+}
+h3{
+    color: brown;
+}
+img{
+    /*Definindo largura máxima*/
+    max-width: 100%;
+    /*Definindo a altura da imagem*/
+    height: fit-content;
+    /*Aplicando margin ou padding em diferentes direções:
+    margin-top - cima
+    margin-bottom - baixo
+    margin-left - esquerda
+    margin-right - direita
+    */
+    margin-top: 0px;
+    /*Arredondando borda das imagens*/
+    border-radius: 4px;
+    width: 500px; /*Tamanho da imagem*/
+}
+#cuidados{
+    img{
+        width: 350px;
+        height: auto;
+    }
+}
+#dicas{
+    /*Definindo cor de fundo da section Dicas*/
+    background-color: rgb(192, 192, 235);
+}
+p{
+    /*Modifica o espaçamento entre as linhas da TAG p*/
+    line-height: 1.6;
+}
+/*Estilização do menu*/
+.menu{
+    /*Permite que os elementos fiquem organizados/alinhados*/
+    display: inline-block;/*Colocar os itens lado a lado*/
+}
+#barraNavegacao{
+    /*Tornar a barra de navegação fixa mesmo ao rolar a página*/
+    position: sticky;
+    top: 0; /*Fixar a barra no topo da janela*/
+    background-color: aliceblue;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    margin-top: 0%;
+}
+.menu a{
+    color: rgb(255, 0, 43);
+    margin-top: 5px;
+    padding: 15px 15px;
+    /*Retirar o sublinhado do link*/
+    text-decoration: none;
+    border: 1px solid black;
+    width: auto;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+}
+/*Evento hover, aplicado aos nossos itens do menu, funciona da seguinte forma: ao passar o mouse em cima do elemento, a modificação que definimos dentro das chaves acontecerá, como, por exemplo, mudar a cor de fundo ao passar o mouse, mudar a cor da letra, aumentar ou diminuir as letras.*/
+li a:hover{
+    /*Ao passar o mouse pelo menu, mudará a cor do fundo*/
+    background-color: cadetblue;
+    color: aliceblue; /*Muda a cor do texto ao passar o mouse*/
+}
+.menuVisite{
+    text-align: center;
+    justify-content: space-around;
+    display: flex;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: rgb(168, 207, 240);
+}
+.card img{
+    height: 200px;
+}
+.btn{
+    width: 30px;
+    padding: 1%;
+    text-decoration: none;
+}
+.card:hover{
+    background-color: rgb(61, 156, 233);
+}
+#visite{
+    background-color: #75586e;
+}
+#tituloMais{
+    color: brown;
+}
+.tituloOutros{
+    color: #FAF0CC;
+}
+/*Estilizando o menu responsivo para tamanho de telas pequeno*/
+/*Faz o nosso menu e todos os seus itens ficarem "invisíveis"*/
+.meuicone, .mobile-menu, #menucheck{
+    display: none;
+}
+/*O comando abaixo não está sendo utilizado. Refere-se ao menu superior da barra de navegação.*/
+.desktop-menu{
+    display: block;
+}
+/*@media é uma regra do css para responsividade, aplicando os estilos a determinadassituações, como por exemplo quando as telas são pequenas demais ou grandes demais.*/
+@media(max-width:768px){
+    /*Escondendo a barra de navegação antiga*/
+    #barraNavegacao{
+        display: none;
+    }
+    #menucheck{
+        display: none;
+    }
+    .meuicone{
+        display: block;
+        background-color: #75586e;
+        color: antiquewhite;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .mobile-menu{
+        display: none;
+        flex-direction: column;
+        background-color: #75586e;
+    }
+    .mobile-menu a{
+        color: antiquewhite;
+        padding: 10px;
+        text-decoration: none;
+        border-top: 1px solid gray;
+    }
+    .mobile-menu a:hover{
+        background-color: darkgray;
+    }
+    /*Ativando o menu como checkbox "marcado"*/
+    #menucheck:checked + .meuicone + .mobile-menu{
+        display: flex;
+    }
+    /*Fixando o menu no topo*/
+    .meuicone{
+        position: sticky;
+        top:0;
+    }
+    /*Fixando os itens do menu - opções no topo*/
+    .mobile-menu{
+        position: sticky;
+        top: 38px;
+    }
+}
+.imgpraias{
+    display: flex;
+    justify-content: space-around;
+}
