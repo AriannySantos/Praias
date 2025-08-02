@@ -21,11 +21,15 @@ h2{
 h3{
     color: brown;
 }
+title{
+    padding-left: 20px;
+    color: rgb(65, 42, 165);
+}
 img{
     /*Definindo largura máxima*/
     max-width: 100%;
     /*Definindo a altura da imagem*/
-    height: fit-content;
+    height: 400px;
     /*Aplicando margin ou padding em diferentes direções:
     margin-top - cima
     margin-bottom - baixo
@@ -35,12 +39,15 @@ img{
     margin-top: 0px;
     /*Arredondando borda das imagens*/
     border-radius: 4px;
-    width: 500px; /*Tamanho da imagem*/
+    width: 600px; /*Tamanho da imagem*/
 }
-#cuidados{
+.imgcuidados{
+    display: flex;
+    justify-content: space-around;
     img{
-        width: 350px;
+        width: 600px;
         height: auto;
+        border: 1px solid gray;
     }
 }
 #dicas{
@@ -61,18 +68,19 @@ p{
     position: sticky;
     top: 0; /*Fixar a barra no topo da janela*/
     background-color: aliceblue;
-    width: 100%;
+    /*width: 100%;*/ /*Retirado, pois criou uma barra de navegação horizontal, mesmo com a tela totalmente aberta*/
     height: 60px;
     text-align: center;
     margin-top: 0%;
+    font-weight: bold;
 }
 .menu a{
-    color: rgb(255, 0, 43);
+    color: #75586e;
     margin-top: 5px;
     padding: 15px 15px;
     /*Retirar o sublinhado do link*/
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid gray;
     width: auto;
     display: inline-block;
     text-align: center;
@@ -88,14 +96,20 @@ li a:hover{
     text-align: center;
     justify-content: space-around;
     display: flex;
+    gap: 5px;
 }
 .card{
-    border: 2px solid black;
+    border: 2px solid rgb(32, 6, 163);
     border-radius: 4px;
-    background-color: rgb(168, 207, 240);
+    background-color: rgb(61, 156, 233);
+    color: bisque;
 }
 .card img{
     height: 200px;
+}
+.card-title{
+    color: #75586e;
+    font-size: 20px;
 }
 .btn{
     width: 30px;
@@ -103,7 +117,7 @@ li a:hover{
     text-decoration: none;
 }
 .card:hover{
-    background-color: rgb(61, 156, 233);
+    background-color: rgb(92, 168, 230);
 }
 #visite{
     background-color: #75586e;
@@ -167,8 +181,32 @@ li a:hover{
         position: sticky;
         top: 38px;
     }
+    .imgpraias{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+    }
+    .menuVisite{
+        flex-direction: column;
+        img{
+            width: 100%;
+        }
+    }
 }
 .imgpraias{
     display: flex;
     justify-content: space-around;
+    gap: 5px;
+    img{
+        border: 1px solid gray;
+    }  
+}
+footer{
+    font-size: 11px;
+    color: #75586e;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(231, 234, 239);
+    padding: 1%;
 }
